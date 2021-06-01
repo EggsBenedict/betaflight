@@ -6746,6 +6746,11 @@ void cliEnter(serialPort_t *serialPort)
 
 #ifndef MINIMAL_CLI
     cliPrintLine("\r\nEntering CLI Mode, type 'exit' to return, or 'help'");
+
+    cliPrintLine("\r\n**Default RATE type now 'ACTUAL': DO NOT paste RATES without");
+    cliPrintLine("confirming values in configurator!**");
+
+    cliPrintLine("\r\n**DO NOT paste DIFFs or DUMPs between versions!**");
 #else
     cliPrintLine("\r\nCLI");
 #endif
